@@ -97,7 +97,7 @@ pProcedimiento.textContent = "Coloca las tortillas de maíz en el microondas, co
 "Para la salsa Calienta una sartén a fuego medio-alto, agrega el aceite de oliva y espera a que esté caliente, añade los tomates, la cebolla y el chile a la sartén durante 10-12 minutos. Por último, colócalos en una licuadora hasta llegar a la consistencia deseada. Coloca las tostadas de maíz horneadas en un plato y encima de cada una coloca un huevo estrellado. Por último vierte la salsa caliente de tomate, chile y cebolla sobre los huevos y las tostadas.";
 
 
-imgReceta.src = 'desayunos/huevosRancheros.jpg';
+imgReceta.src = 'huevosRancheros.jpg';
 imgReceta.alt = 'huevos rancheros';
 
 //INSERTAR PROCEDIMINETO
