@@ -90,7 +90,7 @@ ingredientes.forEach(ingrediente => {
 
 //PROCEDIMIENTOO
 pProcedimiento.textContent = 'Pelar y cortar las papas en rodajas finas, picar la cebolla, calentar un poco de aceite de oliva en una sartén a fuego medio, saltear la cebolla durante unos 5 minutos, hasta que esté transparente, añadir las papas y cocinar durante 15-20 minutos, hasta que estén tiernas, batir los huevos en un bol con sal y pimienta al gusto, verter la mezcla de huevos en la sartén y cocinar a fuego lento hasta que la tortilla esté cuajada, doblar la tortilla por la mitad y servir caliente';
-imgReceta.src = 'img_recetas/Tortillas de papas.jpg';
+imgReceta.src = 'Tortillas de papas.jpg';
 imgReceta.alt = 'DESCRIBANLAA';
 
 //INSERTAR PROCEDIMINETO
