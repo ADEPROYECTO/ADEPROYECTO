@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', function() {
     { src: 'tostadaHuevo.jpg', alt: 'Tostadas con huevos', link: 'tostadaHuevo.html' },
     { src: 'Tortilla de verdura.jpg', alt: 'Tortilla de verdura.', link: 'Tortilla de verdura.html' },
     { src: 'natilla.jpg', alt: 'natilla', link: 'natilla.html' },
-    { src: 'tostadasAguacte.jpg', alt: 'tostadas de aguacate', link: 'Tostadas de aguacate.html' },
   ];
 
   recetas.forEach(imagen => {
