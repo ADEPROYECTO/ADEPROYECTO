@@ -16,43 +16,45 @@ document.addEventListener('DOMContentLoaded', function() {
     { src: 'natilla.jpg', alt: 'natilla', link: 'natilla.html' },
   ];
 
-  recetas.forEach(imagen => {
-    const img = document.createElement('img');
-    img.src = imagen.src;
-    img.alt = imagen.alt;
-    img.classList.add('carrusel-Elem');
-    img.addEventListener('click', () => {
-      window.location.href = imagen.link;
+  function cargarImagenes() {
+    recetas.forEach((imagen, index) => {
+      const img = document.createElement('img');
+      img.src = imagen.src;
+      img.alt = imagen.alt;
+      img.classList.add('carrusel-Elem');
+      img.style.display = index < 3 ? 'block' : 'none'; // Mostrar las primeras 3 imágenes
+      img.addEventListener('click', () => {
+        window.location.href = imagen.link;
+      });
+      carruselInner.appendChild(img);
     });
-    carruselInner.appendChild(img);
-  });
+  }
+
+  // Inicializar el carrusel
+  cargarImagenes();
 
   const Elementos = document.querySelectorAll('.carrusel-Elem');
   let ActualIndice = 0;
 
   function actualizarCarrusel() {
     Elementos.forEach((Elem, index) => {
-      Elem.classList.toggle('active', index >= ActualIndice && index < ActualIndice + 3);
+      if (index >= ActualIndice && index < ActualIndice + 3) {
+        Elem.style.display = 'block';
+      } else {
+        Elem.style.display = 'none';
+      }
     });
   }
 
-  const btnanterior = document.createElement('button');
-  btnanterior.textContent = '❮';
-  btnanterior.classList.add('carrusel-control', 'prev');
-  btnanterior.addEventListener('click', () => {
+  document.querySelector('.prev').addEventListener('click', () => {
     ActualIndice = Math.max(0, ActualIndice - 3);
     actualizarCarrusel();
   });
-  botonesControl.appendChild(btnanterior);
 
-  const btnsiguiente = document.createElement('button');
-  btnsiguiente.textContent = '❯';
-  btnsiguiente.classList.add('carrusel-control', 'next');
-  btnsiguiente.addEventListener('click', () => {
+  document.querySelector('.next').addEventListener('click', () => {
     ActualIndice = Math.min(Elementos.length - 3, ActualIndice + 3);
     actualizarCarrusel();
   });
-  botonesControl.appendChild(btnsiguiente);
 
   actualizarCarrusel();
 });
