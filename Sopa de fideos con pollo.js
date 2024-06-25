@@ -90,7 +90,7 @@ ingredientes.forEach(ingrediente => {
 
 //PROCEDIMIENTOO
 pProcedimiento.textContent = 'Poner el pollo en una olla y cubrir con agua, llevar a ebullición y cocinar durante 1 hora, o hasta que el pollo esté cocido, retirar el pollo de la olla y reservar, colar el caldo y reservar, picar la cebolla, las zanahorias y la patata, calentar un poco de aceite de oliva en una olla a fuego medio, saltear la cebolla y las zanahorias durante unos 5 minutos, hasta que estén transparentes, añadir la patata y cocinar durante unos 10 minutos más, incorporar los fideos al caldo y cocinar según las instrucciones del paquete, desmenuzar el pollo y añadirlo a la sopa, salpimentar al gusto y servir caliente.';
-imgReceta.src = 'img_recetas/Sopa de fideos con pollo.jpg';
+imgReceta.src = 'Sopa de fideos con pollo.jpg';
 imgReceta.alt = 'DESCRIBANLAA';
 
 //INSERTAR PROCEDIMINETO
