@@ -92,7 +92,7 @@ ingredientesOmeletteQueso.forEach(ingrediente => {
     liIngredientes.appendChild(li);
 });
 pProcedimiento.textContent = "Bate los huevos y añade el queso rallado. Cocina a fuego medio hasta que el omelette esté cuajado. Dobla el omelette y cocina hasta que el queso se derrita completamente.";
-imgReceta.src = 'desayunos/omeletteQueso.jpg';
+imgReceta.src = 'omeletteQueso.jpg';
 imgReceta.alt = 'omelette de queso';
 
 //INSERTAR PROCEDIMINETO
