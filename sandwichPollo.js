@@ -92,7 +92,7 @@ ingredientesSandwichPollo.forEach(ingrediente => {
     liIngredientes.appendChild(li);
 });
 pProcedimiento.textContent = "Tuesta ligeramente el pan. Mezcla la pechuga de pollo con la mayonesa. Coloca la mezcla de pollo sobre una rebanada de pan, añade lechuga y tomate. Cierra el sandwich con la otra rebanada de pan y sirve.";
-imgReceta.src = 'almuerzos/sandwichPollo.jpg';
+imgReceta.src = 'sandwichPollo.jpg';
 imgReceta.alt = 'sandwich de pollo';
 
 //INSERTAR PROCEDIMINETO
