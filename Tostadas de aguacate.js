@@ -90,7 +90,7 @@ ingredientes.forEach(ingrediente => {
 
 //PROCEDIMIENTOO
 pProcedimiento.textContent = ' Tostar la rebanada de pan integral, aplastar el aguacate sobre el pan tostado, sal al gusto,disfrutar';
-imgReceta.src = 'img_recetas/Tostadas de aguacate.jpg';
+imgReceta.src = 'Tostadas de aguacate.jpg';
 imgReceta.alt = 'DESCRIBANLAA';
 
 //INSERTAR PROCEDIMINETO
