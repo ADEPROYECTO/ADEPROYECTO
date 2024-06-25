@@ -90,7 +90,7 @@ ingredientes.forEach(ingrediente => {
 
 //PROCEDIMIENTOO
 pProcedimiento.textContent = 'Picar la cebolla, el pimiento verde y el tomate en trozos pequeños,Calentar un poco de aceite de oliva en una sartén a fuego medio,Saltear la cebolla y el pimiento verde durante unos 5 minutos, hasta que estén tierno,Añadir el tomate y cocinar durante un par de minutos más.Batir los huevos en un bol con sal y pimienta al gusto,Verter la mezcla de huevos en la sartén y cocinar a fuego lento hasta que la tortilla esté cuajada,Doblar la tortilla por la mitad y servir caliente';
-imgReceta.src = 'img_recetas/Tortilla de verdura.jpg';
+imgReceta.src = 'Tortilla de verdura.jpg';
 imgReceta.alt = 'DESCRIBANLAA';
 
 //INSERTAR PROCEDIMINETO
