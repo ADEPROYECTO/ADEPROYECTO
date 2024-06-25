@@ -1,58 +1,61 @@
-//Emilia Espinoza
+// Emilia Espinoza
 document.addEventListener('DOMContentLoaded', function() {
   const carruselInner = document.getElementById('carruselInner');
   const botonesControl = document.getElementById('botonesControl');
 
   const recetas = [
-    { src: 'huevosRancheros.jpg', alt: 'huevos rancheros', link: 'huevosRancheros.html' },
-    { src: 'omeletteChamp.jpg', alt: 'Omelette de champiñon', link: 'omeletteChamp.html' },
-    { src: 'omeletteQueso.jpg', alt: 'omelette de queso', link: 'omeletteQueso.html' },
-    { src: 'quesadillasEsp.jpg', alt: 'Quesadillas con espinaca', link: 'quesadillaEsp.html' },
-    { src: 'sandwichHuevo.jpg', alt: 'Sandwich de huevo', link: 'sandwichHuevo.html' },
-    { src: 'sandwichPollo.jpg', alt: 'sandwich de pollo', link: 'sandwichPollo.html' },
-    { src: 'Sandwich de atun.jpg', alt: 'Sandwich de atun', link: 'Sandwich de atun.html' },
-    { src: 'tostadaHuevo.jpg', alt: 'Tostadas con huevos', link: 'tostadaHuevo.html' },
-    { src: 'Tortilla de verdura.jpg', alt: 'Tortilla de verdura.', link: 'Tortilla de verdura.html' },
-    { src: 'natilla.jpg', alt: 'natilla', link: 'natilla.html' },
+    { src: 'huevosRancheros.jpg', alt: 'Huevos Rancheros', link: 'huevosRancheros.html' },
+    { src: 'omeletteChamp.jpg', alt: 'Omelette de Champiñon', link: 'omeletteChamp.html' },
+    { src: 'omeletteQueso.jpg', alt: 'Omelette de Queso', link: 'omeletteQueso.html' },
+    { src: 'quesadillasEsp.jpg', alt: 'Quesadillas con Espinaca', link: 'quesadillaEsp.html' },
+    { src: 'sandwichHuevo.jpg', alt: 'Sandwich de Huevo', link: 'sandwichHuevo.html' },
+    { src: 'sandwichPollo.jpg', alt: 'Sandwich de Pollo', link: 'sandwichPollo.html' },
+    { src: 'Sandwich de atun.jpg', alt: 'Sandwich de Atún', link: 'Sandwich de atun.html' },
+    { src: 'tostadaHuevo.jpg', alt: 'Tostadas con Huevo', link: 'tostadaHuevo.html' },
+    { src: 'Tortilla de verdura.jpg', alt: 'Tortilla de Verdura', link: 'Tortilla de verdura.html' },
+    { src: 'natilla.jpg', alt: 'Natilla', link: 'natilla.html' },
   ];
 
-  recetas.forEach(imagen => {
-    const img = document.createElement('img');
-    img.src = imagen.src;
-    img.alt = imagen.alt;
-    img.classList.add('carrusel-Elem');
-    img.addEventListener('click', () => {
-      window.location.href = imagen.link;
+  // Función para crear las imágenes y añadirlas al carruselInner
+  function cargarImagenes() {
+    recetas.forEach((imagen, index) => {
+      const img = document.createElement('img');
+      img.src = imagen.src;
+      img.alt = imagen.alt;
+      img.classList.add('carrusel-Elem');
+      img.style.display = index < 3 ? 'block' : 'none'; // Mostrar las primeras 3 imágenes
+      img.addEventListener('click', () => {
+        window.location.href = imagen.link;
+      });
+      carruselInner.appendChild(img);
     });
-    carruselInner.appendChild(img);
-  });
+  }
+
+  // Inicializar el carrusel
+  cargarImagenes();
 
   const Elementos = document.querySelectorAll('.carrusel-Elem');
   let ActualIndice = 0;
 
   function actualizarCarrusel() {
     Elementos.forEach((Elem, index) => {
-      Elem.classList.toggle('active', index >= ActualIndice && index < ActualIndice + 3);
+      if (index >= ActualIndice && index < ActualIndice + 3) {
+        Elem.style.display = 'block';
+      } else {
+        Elem.style.display = 'none';
+      }
     });
   }
 
-  const btnanterior = document.createElement('button');
-  btnanterior.textContent = '❮';
-  btnanterior.classList.add('carrusel-control', 'prev');
-  btnanterior.addEventListener('click', () => {
+  document.querySelector('.prev').addEventListener('click', () => {
     ActualIndice = Math.max(0, ActualIndice - 3);
     actualizarCarrusel();
   });
-  botonesControl.appendChild(btnanterior);
 
-  const btnsiguiente = document.createElement('button');
-  btnsiguiente.textContent = '❯';
-  btnsiguiente.classList.add('carrusel-control', 'next');
-  btnsiguiente.addEventListener('click', () => {
+  document.querySelector('.next').addEventListener('click', () => {
     ActualIndice = Math.min(Elementos.length - 3, ActualIndice + 3);
     actualizarCarrusel();
   });
-  botonesControl.appendChild(btnsiguiente);
 
   actualizarCarrusel();
 });
