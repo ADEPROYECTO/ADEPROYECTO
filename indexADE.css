@@ -189,12 +189,3 @@ body {
   color: #333;
 }
 
-.receta-img {
-  width: 140px;
-  border-radius: 17px;
-  margin: 10px;
-  margin-left: 35px;
-  margin-bottom: 22px;
-  margin-right: 35px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
