@@ -90,7 +90,7 @@ ingredientes.forEach(ingrediente => {
 
 //PROCEDIMIENTOO
 pProcedimiento.textContent = ' Cortar los tomates en cubos, desmenuzar el queso , mezclar los tomates, el queso añadir con aceite, vinagre, sal y pimienta y servir';
-imgReceta.src = 'img_recetas/Ensalada de tomate y queso.jpg';
+imgReceta.src =' Ensalada de tomate y queso.jpg';
 imgReceta.alt = 'DESCRIBANLAA';
 
 //INSERTAR PROCEDIMINETO
