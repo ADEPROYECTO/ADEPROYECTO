@@ -90,7 +90,7 @@ ingredientes.forEach(ingrediente => {
 
 //PROCEDIMIENTOO
 pProcedimiento.textContent = 'Mezclar el atún con la mayonesa o el aceite de oliva, la sal y la pimienta, untar la mezcla de atún sobre las rebanadas de pan, agregar lechuga, tomate y cebolla';
-imgReceta.src = 'img_recetas/Sandwich de atun.jpg';
+imgReceta.src = 'Sandwich de atun.jpg';
 imgReceta.alt = 'DESCRIBANLAA';
 
 //INSERTAR PROCEDIMINETO
