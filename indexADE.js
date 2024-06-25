@@ -53,7 +53,7 @@ const menuDiv = document.getElementById('menu');
 
 const opciones = [
   { text: 'Desayuno', url: 'desayunos.html' },
-  { text: 'Comida', url: 'comida.html' },
+  { text: 'Comida', url: 'comidas.html' },
   { text: 'Cena', url: 'cena.html' },
   { text: 'Recetas personalizadas', url: 'recetasPerso.html' },
   { text: 'Contáctanos', url: 'contactoADE.html' }
