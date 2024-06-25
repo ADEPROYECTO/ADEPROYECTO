@@ -90,7 +90,7 @@ ingredientes.forEach(ingrediente => {
 
 //PROCEDIMIENTOO
 pProcedimiento.textContent = 'Cocer la pasta según las instrucciones del paquete,escurrir la pasta y dejar enfriar,picar la cebolla morada, el tomate, el pepino,mezclar la pasta con el atún, las verduras con aceite  vinagre, sal y pimienta y servir fría.';
-imgReceta.src = 'img_recetas/Ensalada de pasta con atun.jpg';
+imgReceta.src = 'Ensalada de pasta con atun.jpg';
 imgReceta.alt = 'DESCRIBANLAA';
 
 //INSERTAR PROCEDIMINETO
