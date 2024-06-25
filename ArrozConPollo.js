@@ -90,7 +90,7 @@ ingredientes.forEach(ingrediente => {
 
 //PROCEDIMIENTOO
 pProcedimiento.textContent = 'Picar la cebolla, el pimiento verde, el tomate y el ajo,Cortar el pollo en trozos pequeños, calentar un poco de aceite de oliva en una olla a fuego medio, saltear la cebolla y el ajo durante unos 5 minutos, hasta que estén transparentes, Añadir el pollo y cocinar hasta que esté dorado, Incorporar el pimiento verde y el tomate y cocinar durante unos 10 minutos más,Añadir el arroz y remover para que se impregne con los sabores, Verter agua o caldo de pollo hasta cubrir el arroz, Salpimentar al gusto y llevar a ebullición,Bajar el fuego, tapar la olla y cocinar durante 20 minutos, o hasta que el arroz esté cocido,Apagar el fuego y dejar reposar unos minutos antes de servir.';
-imgReceta.src = 'img_recetas/arroz con pollo.jpg';
+imgReceta.src = 'arroz con pollo.jpg';
 imgReceta.alt = 'DESCRIBANLAA';
 
 //INSERTAR PROCEDIMINETO
