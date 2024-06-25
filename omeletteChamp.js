@@ -92,7 +92,7 @@ ingredientes.forEach(ingrediente => {
     liIngredientes.appendChild(li);
 });
 pProcedimiento.textContent = "Bate los huevos y corta los champiñones en láminas. Cocina los champiñones en una sartén con aceite de oliva. Añade los huevos batidos y cocina a fuego medio. Añade queso rallado y dobla el omelette. Cocina hasta que el queso se derrita.";
-imgReceta.src = 'desayunos/omeletteChampiñones.jpg';
+imgReceta.src = 'omeletteChamp.jpg';
 imgReceta.alt = 'omelette de champiñones';
 
 //INSERTAR PROCEDIMINETO
