@@ -90,7 +90,7 @@ ingredientes.forEach(ingrediente => {
 
 //PROCEDIMIENTOO
 pProcedimiento.textContent = 'Lavar las lentejas, picar la cebolla, la zanahoria y el ajo, calentar un poco de aceite de oliva en una olla a fuego medio, saltear la cebolla y el ajo durante unos 5 minutos, hasta que estén transparentes, añadir la zanahoria y cocinar durante unos 10 minutos más, incorporar las lentejas y el caldo de verduras, llevar a ebullición y luego bajar el fuego,Cocinar durante 20 minutos, o hasta que las lentejas estén blandas, triturar la sopa con una batidora hasta obtener una crema suave,Salpimentar al gusto y servir caliente.';
-imgReceta.src = 'img_recetas/Crema de lentejas.jpg';
+imgReceta.src = 'Crema de lentejas.jpg';
 imgReceta.alt = 'DESCRIBANLAA';
 
 //INSERTAR PROCEDIMINETO
