@@ -92,7 +92,7 @@ ingredientesSandwichHuevo.forEach(ingrediente => {
     liIngredientes.appendChild(li);
 });
 pProcedimiento.textContent = "Bate los huevos y cocina en una sartén hasta que estén cuajados. Tuesta el pan y coloca el huevo cocido encima. Agrega queso y jamón si deseas. Cierra el sandwich y sirve caliente.";
-imgReceta.src = 'almuerzos/sandwichHuevo.jpg';
+imgReceta.src = 'sandwichHuevo.jpg';
 imgReceta.alt = 'sandwich de huevo';
 
 //INSERTAR PROCEDIMINETO
