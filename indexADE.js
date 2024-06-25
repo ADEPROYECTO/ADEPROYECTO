@@ -1,3 +1,4 @@
+
 //BUSCADOR HECHO POR EMILIA ESPINOZA
 const busquedaDiv = document.getElementById('barraDiv');
 
@@ -55,7 +56,6 @@ const opciones = [
   { text: 'Desayuno', url: 'desayunos.html' },
   { text: 'Comida', url: 'comida.html' },
   { text: 'Cena', url: 'cena.html' },
-  { text: 'Recetas personalizadas', url: 'recetasPerso.html' },
   { text: 'Contáctanos', url: 'contactoADE.html' }
 ];
 
@@ -85,58 +85,65 @@ menuDiv.appendChild(ulMenu);
 
 
 //CATALOGOOOOOOO HECHO POR ASHLEY VAZQUEZ
-const catalogoDiv = document.getElementById('catalogo');
+document.addEventListener('DOMContentLoaded', function() {
+  const carruselInner = document.getElementById('carruselInner');
+  const botonesControl = document.getElementById('botonesControl');
 
-const hRecetas = document.createElement('h2');
-hRecetas.textContent = 'Recetas recomendadas';
-catalogoDiv.appendChild(hRecetas);
+  const recetas = [
+    { src: 'arroz con pollo.jpg', alt: 'arroz con pollo', link: 'ArrozConPollo.html' },
+    { src: 'Crema de Verduras.jpg', alt: 'Crema de Verduras', link: 'CremaconVerduras.html' },
+    { src: 'Ensalada de atun y frijoles.jpg', alt: 'Ensalada de atun y frijoles', link: 'Ensalada de pasta con atun.html' },
+    { src: 'Crema de lentejas.jpg', alt: 'Crema de lentejas', link: 'Crema de lentejas.html' },
+    { src: 'Ensalada de pasta fria.jpg', alt: 'Ensalada de pasta fria', link: 'Ensalada de pasta fria.html' },
+    { src: 'Ensalada de tomate y queso.jpg', alt: 'Ensalada de tomate y queso', link: 'Ensalada de tomate y queso.html' },
+    { src: 'Sandwich de atun.jpg', alt: 'Sandwich de atun', link: 'Sandwich de atun.html' },
+    { src: 'Sopa de fideos con pollo.jpg', alt: 'Sopa de fideos con pollo', link: 'Sopa de fideos con pollo.html' },
+    { src: 'Tortilla de verdura.jpg', alt: 'Tortilla de verdura.', link: 'Tortilla de verdura.html' },
+    { src: 'arroz con pollo.jpg', alt: 'arroz con pollo', link: 'ArrozConPollo.html' },
+    { src: 'Crema de Verduras.jpg', alt: 'Crema de Verduras', link: 'CremaconVerduras.html' },
+  ];
 
-    const recetas = [
-      { title: "Receta 1", image: "receta1.jpg", url: "recipe1.html" },
-      { title: "Receta 2", image: "receta2.jpg", url: "recipe2.html" },
-      { title: "Receta 3", image: "receta3.jpg", url: "recipe3.html" },
-
-    ];
-
-    recetas.forEach(receta => {
-      const enlace = document.createElement('a');
-      enlace.href = receta.url;
-      enlace.classList.add('receta-link');
-
-      const imagen = document.createElement('img');
-      imagen.src = receta.image;
-      imagen.alt = receta.title;
-      imagen.classList.add('receta-img');
-
-      enlace.appendChild(imagen);
-      catalogoDiv.appendChild(enlace);
+  recetas.forEach(imagen => {
+    const img = document.createElement('img');
+    img.src = imagen.src;
+    img.alt = imagen.alt;
+    img.classList.add('carrusel-Elem');
+    img.addEventListener('click', () => {
+      window.location.href = imagen.link;
     });
+    carruselInner.appendChild(img);
+  });
 
-const hPostres = document.createElement('h2');
-hPostres.textContent = 'Postres';
-catalogoDiv.appendChild(hPostres);
+  const Elementos = document.querySelectorAll('.carrusel-Elem');
+  let ActualIndice = 0;
 
-    const postres = [
-      { title: "Postre 1", image: "postre1.jpg", url: "recipe4.html" },
-      { title: "Postre 2", image: "postre2.jpg", url: "recipe5.html" },
-      { title: "Postre 3", image: "postre3.jpg", url: "recipe6.html" },
-
-    ];
-
-    postres.forEach(postre => {
-      const enlace = document.createElement('a');
-      enlace.href = postre.url;
-      enlace.classList.add('postre-link');
-
-      const imagen = document.createElement('img');
-      imagen.src = postre.image;
-      imagen.alt = postre.title;
-      imagen.classList.add('postre-img');
-
-      enlace.appendChild(imagen);
-      catalogoDiv.appendChild(enlace);
+  function actualizarCarrusel() {
+    Elementos.forEach((Elem, index) => {
+      Elem.classList.toggle('active', index >= ActualIndice && index < ActualIndice + 3);
     });
+  }
 
+  const btnanterior = document.createElement('button');
+  btnanterior.textContent = '❮';
+  btnanterior.classList.add('carrusel-control', 'prev');
+  btnanterior.addEventListener('click', () => {
+    ActualIndice = Math.max(0, ActualIndice - 3);
+    actualizarCarrusel();
+  });
+
+  botonesControl.appendChild(btnanterior);
+
+  const btnsiguiente = document.createElement('button');
+  btnsiguiente.textContent = '❯';
+  btnsiguiente.classList.add('carrusel-control', 'next');
+  btnsiguiente.addEventListener('click', () => {
+    ActualIndice = Math.min(Elementos.length - 3, ActualIndice + 3);
+    actualizarCarrusel();
+  });
+  botonesControl.appendChild(btnsiguiente);
+
+  actualizarCarrusel();
+});
 
 //ANUNCIO HECHO POR ALAN DURON
 const anuncioDiv = document.getElementById('anuncio');
@@ -172,4 +179,6 @@ anuncioDiv.appendChild(imagen);
 setInterval(ActualizarReloj,1000);
 
 ActualizarReloj();
+
+
 
