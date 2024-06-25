@@ -90,7 +90,7 @@ ingredientes.forEach(ingrediente => {
 
 //PROCEDIMIENTOO
 pProcedimiento.textContent = 'Cocer la pasta según las instrucciones del paquete, escurrir la pasta y dejar enfriar, cortar el tomate, el pepino, la cebolla morada, mezclar la pasta con las verduras, añadir con aceite , vinagre de limón, sal y pimienta, servir fría.';
-imgReceta.src = 'img_recetas/Ensalada de pasta fria.jpg';
+imgReceta.src = 'Ensalada de pasta fria.jpg';
 imgReceta.alt = 'DESCRIBANLAA';
 
 //INSERTAR PROCEDIMINETO
