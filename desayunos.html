@@ -1,48 +1,36 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ADE</title>
-  <link rel="stylesheet" type="text/css" href="estiloMenu.css">
+ 
 </head>
 <body>
 
+<div id="barraDiv"></div>
 
+    <div id="contenedorPrincipal">
 
-  <!-- CONTENEDOR PRINCIPAL -->
-  <div id="contenedorPrincipal">
-
-    <!-- MENÚ LATERAL IZQUIERDO -->
-    <div id="contenedorIzq">
-      <div id="menu">
-        <!-- Aquí va tu menú dinámico desde JS -->
-      </div>
-      <div id="anuncio">
-        <!-- Aquí va tu anuncio desde JS o imagen -->
-      </div>
-    </div>
-
-    <!-- CATÁLOGO DE DESAYUNOS -->
-    <div id="contenedorDerecho">
-      <div id="catalogo">
-        <div id="carruselInner">
-          <!-- Las tarjetas de recetas se insertarán aquí desde desayunos.js -->
+        <div id="contenedorIzq">
+            <div id="menu"></div>
+            <div id="anuncio"></div>
         </div>
-        
-        <!-- BOTONES DE CONTROL DE CARRUSEL -->
-        <div id="botonesControl">
-          <button class="carrusel-control prev">❮</button>
-          <button class="carrusel-control next">❯</button>
-        </div>
-      </div>
-    </div>
 
+        <div id="contenedorDerecho">
+            <div id="catalogo">
+            <div id="carruselInner"></div>
+
+  <div id="botonesControl">
+    <button class="carrusel-control prev">❮</button>
+    <button class="carrusel-control next">❯</button>
   </div>
 
-  <!-- JAVASCRIPT -->
   <script src="desayunos.js"></script>
+  <link rel="stylesheet" type="text/css" href="estiloMenu.css">
+           
 </body>
 </html>
+
 
 
