@@ -68,8 +68,7 @@ body, html {
     display: flex;
     justify-content: center;
     padding: 20px;
-    gap: 20px;
-    flex-wrap: wrap;
+    max-width: 600px;
 }
 
 /* Anuncio lateral */
@@ -78,12 +77,13 @@ body, html {
     padding: 40px;
     background-color: #f5f5f5;
     border-radius: 17px;
+    margin-left: 2px;
+    margin-right: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* Imagen del anuncio */
 #anuncioDerecha img {
     border: 2px solid #94AB6F;
     border-radius: 17px;
@@ -91,43 +91,57 @@ body, html {
     height: auto;
 }
 
-/* Contenido principal de receta */
+/* Contenido principal */
 #contenidoPrincipal {
     flex-grow: 1;
     border-radius: 17px;
-    padding: 30px;
+    padding: 20px;
     background-color: #8ca06d;
-    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    max-width: 990px;
+    align-items: center; /* Centra todo horizontalmente */
     text-align: center;
 }
 
-/* Título de la receta */
-#tituloReceta {
-    font-size: 28px;
-    font-weight: bold;
+/* Título */
+#pTitulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     margin-bottom: 20px;
+}
+
+#tituloReceta {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 20px;
     color: white;
 }
 
-/* Imagen centrada */
+/* Imagen */
 #imgReceta {
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto 20px auto;
+    width: 300px;
+    height: 200px;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 #imgReceta img {
-    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
     border-radius: 8px;
 }
 
-/* Lista de ingredientes */
+/* Ingredientes */
 #liIngredientes {
-    list-style: none;
-    padding: 0;
-    text-align: left;
-    color: white;
+    list-style: disc;
     margin-bottom: 20px;
+    color: white;
+    text-align: left;
 }
 
 #liIngredientes li {
@@ -136,9 +150,38 @@ body, html {
 
 /* Procedimiento */
 #pProcedimiento {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-width: 600px;
+    white-space: pre-wrap;
     text-align: justify;
     color: white;
+}
+
+#contenidoPrincipal p, #contenidoPrincipal ul {
+    width: 100%;
+    color: white;
     line-height: 1.6;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-width: 1000px;
     white-space: pre-wrap;
+}
+
+#contenidoPrincipal ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contenidoPrincipal ul li {
+    margin-bottom: 5px;
+}
+
+#contenidoPrincipal p#tituloReceta {
+    font-size: 24px;
+    font-weight: bold;
     margin-bottom: 20px;
 }
