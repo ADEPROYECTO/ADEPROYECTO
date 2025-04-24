@@ -92,7 +92,7 @@ ingredientesQuesadilla.forEach(ingrediente => {
     liIngredientes.appendChild(li);
 });
 pProcedimiento.textContent = "Saltea las espinacas y los champiñones en una sartén. Coloca una tortilla en la sartén, añade queso y la mezcla de espinacas y champiñones. Cubre con otra tortilla y cocina hasta que el queso se derrita y la tortilla esté dorada por ambos lados.";
-imgReceta.src = 'quesadillaEsp.jpg';
+imgReceta.src = 'quesadillasEsp.jpg';
 imgReceta.alt = 'quesadilla de espinaca y champiñones';
 
 //INSERTAR PROCEDIMINETO
