@@ -5,7 +5,7 @@ body, html {
     font-family: Arial, sans-serif;
 }
 
-/* Container */
+/* Contenedor principal */
 .container {
     display: flex;
     flex-direction: column;
@@ -29,21 +29,25 @@ body, html {
 
 #barraDiv {
     flex-grow: 1;
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fefefe;
 }
 
 #barraDiv input[type="text"] {
     width: 100%;
-    padding: 8px;
-    border: 2px solid #94AB6F;
-    border-radius: 5px;
+    padding: 10px;
+    border: 1.5px solid #94AB6F;
+    border-radius: 8px;
+    font-size: 16px;
     box-sizing: border-box;
+    outline: none;
 }
 
+/* Resultados */
 #resultado {
     list-style: none;
     padding: 0;
@@ -63,24 +67,21 @@ body, html {
     border-radius: 8px;
 }
 
-/* Content */
+/* Contenido */
 #contenido {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     padding: 20px;
-    max-width: 100%;
-    min-height: 80vh;
+    gap: 20px;
 }
 
-/* Anuncio lateral */
+/* Anuncio a la izquierda */
 #anuncioDerecha {
-    width: 300px;
-    padding: 40px;
+    width: 250px;
     background-color: #f5f5f5;
     border-radius: 17px;
-    margin-left: 2px;
-    margin-right: 20px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -93,91 +94,51 @@ body, html {
     height: auto;
 }
 
-/* Contenido principal */
+/* Receta */
 #contenidoPrincipal {
-    flex-grow: 1;
-    border-radius: 17px;
-    padding: 20px;
     background-color: #8ca06d;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    max-width: 500px;
+    border-radius: 17px;
+    padding: 30px;
+    max-width: 600px;
     width: 100%;
-}
-
-#pTitulo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-#tituloReceta {
-    font-size: 24px;
-    font-weight: bold;
-    margin-right: 20px;
+    text-align: center;
+    color: white;
 }
 
 #imgReceta {
-    width: 300px;
-    height: 200px;
-    background-color: #ddd;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto 20px auto;
 }
 
 #imgReceta img {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 8px;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+#tituloReceta {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
 #liIngredientes {
     list-style: disc;
-    margin-bottom: 20px;
+    margin: 0 auto 20px auto;
+    padding-left: 20px;
+    text-align: left;
 }
 
 #liIngredientes li {
     margin-bottom: 5px;
 }
 
-/* Procedimiento */
 #pProcedimiento {
-    line-height: 1.6;
-    margin-bottom: 20px;
-    word-wrap: break-word;
-    overflow: hidden;
-    max-width: 200px;
+    text-align: justify;
+    max-width: 500px;
+    margin: 0 auto;
     white-space: pre-wrap;
-}
-
-#contenidoPrincipal p,
-#contenidoPrincipal ul {
-    width: 100%;
-    color: white;
     line-height: 1.6;
-    margin-bottom: 20px;
-    word-wrap: break-word;
-    overflow: hidden;
-    max-width: 1000px;
-    white-space: pre-wrap;
-}
-
-#contenidoPrincipal ul {
-    list-style: none;
-    padding: 0;
-}
-
-#contenidoPrincipal ul li {
-    margin-bottom: 5px;
-}
-
-#contenidoPrincipal p#tituloReceta {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
 }
