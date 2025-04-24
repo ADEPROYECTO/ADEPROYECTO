@@ -90,7 +90,7 @@ ingredientes.forEach(ingrediente => {
 
 //PROCEDIMIENTOO
 pProcedimiento.textContent = 'Picar la cebolla, las zanahorias,  en trozos pequeños,Calentar un poco de aceite  en una olla a fuego medio,Saltear la cebolla durante unos 5 minutos, hasta que esté transparente,Añadir las zanahorias, la papa y cocinar durante unos 10 minutos más,Verter el caldo de verduras y llevar a ebullición,Bajar el fuego y cocinar durante 20 minutos, hasta que las verduras estén blandas,Triturar la sopa con una batidora hasta obtener una crema suave,Salpimentar al gusto y servir caliente.';
-imgReceta.src = 'Crema de verduras.jpg';
+imgReceta.src = 'Crema de Verduras.jpg';
 imgReceta.alt = 'DESCRIBANLAA';
 
 //INSERTAR PROCEDIMINETO
