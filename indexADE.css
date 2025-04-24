@@ -1,79 +1,87 @@
-/*BUSQUEDAAAAAAA*/
-
-#barraDiv {
-  max-width: 900px; /* Ancho máximo del contenedor */
-  margin: 0 auto; /* Centrar horizontalmente */
-  padding: 10px; /* Espaciado interno */ 
-  border-radius: 8px; /* Bordes redondeados */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
-}
-
-#buscar {
-  width: calc(100% - 20px); /* Ancho del input menos el padding */
-  padding: 8px; /* Espaciado interno */
-  border: 2px solid #94AB6F; /* Borde verde */
-  border-radius: 5px; /* Bordes redondeados */
-  
-}
-
-#resultado {
-  list-style-type: none; /* Quita los puntos de la lista */
-  padding: 0; /* Elimina el espaciado interno */
-}
-
-/* Estilo para los elementos de la lista de resultados */
-#resultado li {
-  margin-bottom: 10px; /* Espaciado inferior entre elementos */
-}
-
-#resultado img {
-  max-width: 100px; /* Ancho máximo de las imágenes */
-  height: auto; /* Altura automática para mantener la proporción */
-  display: block; /* Mostrar las imágenes como bloques */
-  margin-bottom: 5px; /* Espaciado inferior entre imágenes */
-  border-radius: 8px;
-}
-
-
-
-#contenedorPrincipal {
-  display: flex; /* Utiliza flexbox */
-  justify-content: space-between;
-}
-
-#contenedorIzq {
-  display: flex; /* Utiliza flexbox */
-  flex-direction: column; /* Dirección de los elementos: columna */
-}
-
-/* Contenedor derecho */
-#contenedorDerecho {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-
-/*MENU*/
-
+/* General */
 body {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
 }
 
+/* BUSQUEDAAAAAAA */
+#barraDiv {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#barraDiv div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+#buscar {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid #94AB6F;
+  border-radius: 5px;
+}
+
+#logoBusqueda {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+}
+
+/* RESULTADOS */
+#resultado {
+  list-style-type: none;
+  padding: 0;
+}
+
+#resultado li {
+  margin-bottom: 10px;
+}
+
+#resultado img {
+  max-width: 100px;
+  height: auto;
+  display: block;
+  margin-bottom: 5px;
+  border-radius: 8px;
+}
+
+/* CONTENEDORES */
+#contenedorPrincipal {
+  display: flex;
+  justify-content: space-between;
+}
+
+#contenedorIzq {
+  display: flex;
+  flex-direction: column;
+}
+
+#contenedorDerecho {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* MENU */
 #menu {
   width: 250px;
   margin-bottom: 10px;
   margin: 20px;
-  margin-right: 20px; 
+  margin-right: 20px;
   background-color: #94AB6F;
   border-radius: 17px;
   padding: 20px;
 }
-
 
 #pTitulo1 {
   font-family: sans-serif;
@@ -90,61 +98,50 @@ body {
   margin-bottom: 10px;
   color: white;
   font-weight: normal;
-  padding-left: 20px; 
+  padding-left: 20px;
   position: relative;
 }
 
 #liOpciones li:before {
-  content: '•'; 
+  content: '•';
   margin-right: 10px;
 }
 
 #liOpciones li a {
   color: white;
   text-decoration: none;
-  
 }
 
-/*ANUNCIOOOOO*/
-
-/* Estilo del anuncio */
+/* ANUNCIO */
 #anuncio {
-  background-color: #94AB6F; /* Color de fondo verde */
-  padding: 10px; /* Espaciado interno para la imagen */
+  background-color: #94AB6F;
+  padding: 10px;
   display: inline-block;
-  border-radius: 17px; /* Para que la div se ajuste al contenido */
+  border-radius: 17px;
   margin-left: 20px;
   width: 270px;
   align-content: center;
   margin-right: 20px;
-
 }
 
 #anuncio img {
-   /* Para asegurar que la imagen ocupe todo el espacio disponible */
-  border: 2px solid #94AB6F; /* Borde verde alrededor de la imagen */
-  border-radius: 17px; /* Bordes redondeados */
+  border: 2px solid #94AB6F;
+  border-radius: 17px;
   width: 250px;
   display: flex;
-
-
 }
 
-
-
-
-/*CATALOGOOOOOOOOO*/
+/* CATALOGO */
 #catalogo {
   background-color: #B8CF93;
   padding: 30px;
   border-radius: 17px;
   max-width: 790px;
   margin: 20px auto;
-  display: flex; /* Utiliza flexbox para distribuir los elementos */
-  flex-wrap: wrap; /* Permite que los elementos se ajusten a múltiples líneas */
-  justify-content: center; /* Centra los elementos horizontalmente */
-  align-items: center; 
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 #catalogo h2 {
