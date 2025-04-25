@@ -1,36 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ADE</title>
- 
+  <link rel="stylesheet" type="text/css" href="estiloMenu.css">
 </head>
 <body>
 
-<div id="barraDiv"></div>
-
-    <div id="contenedorPrincipal">
-
-        <div id="contenedorIzq">
-            <div id="menu"></div>
-            <div id="anuncio"></div>
-        </div>
-
-        <div id="contenedorDerecho">
-            <div id="catalogo">
-            <div id="carruselInner"></div>
-
-  <div id="botonesControl">
-    <button class="carrusel-control prev">❮</button>
-    <button class="carrusel-control next">❯</button>
+  <!-- Barra de búsqueda con logo -->
+  <div id="barraDiv">
+    <div id="logo">
+      <img src="logo.png" alt="Logo de ADE">
+    </div>
+    <input type="text" id="buscar" placeholder="Buscar...">
   </div>
 
+  <!-- Contenedor principal -->
+  <div id="contenedorPrincipal">
+
+    <!-- Lado izquierdo -->
+    <div id="contenedorIzq">
+      <div id="menu"></div>
+      <div id="anuncio"></div>
+    </div>
+
+    <!-- Lado derecho -->
+    <div id="contenedorDerecho">
+      <div id="catalogo">
+        <div id="carruselInner"></div>
+
+        <div id="botonesControl">
+          <button class="carrusel-control prev">❮</button>
+          <button class="carrusel-control next">❯</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Script -->
   <script src="desayunos.js"></script>
-  <link rel="stylesheet" type="text/css" href="estiloMenu.css">
-           
+
 </body>
 </html>
+
 
 
 
