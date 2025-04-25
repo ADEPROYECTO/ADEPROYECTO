@@ -6,23 +6,24 @@ body, html {
   background-color: #f9f9f9;
 }
 
-/* CONTENEDOR GENERAL */
+/* CONTENEDOR PRINCIPAL - Centrado y alineación */
 #contenedorPrincipal {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center; /* Cambiado a 'center' */
+  padding: 0 20px; /* Ajuste de padding para mover hacia la izquierda */
 }
 
-/* BARRA DE BUSQUEDA - MODIFICADA */
+/* BARRA DE BUSQUEDA */
 #barraDiv {
-  max-width: 600px; /* más pequeño */
+  max-width: 900px;
   margin: 20px auto 0 auto;
-  padding: 6px 12px;
+  padding: 10px 20px;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
   background-color: #ffffff;
 }
 
@@ -32,28 +33,62 @@ body, html {
 }
 
 #logo img {
-  height: 40px; /* tamaño reducido */
+  height: 60px; /* LOGO MÁS GRANDE */
   width: auto;
   cursor: pointer;
 }
 
 #buscar {
   flex: 1;
-  padding: 6px 10px;
-  font-size: 14px;
+  padding: 10px 15px;
+  font-size: 16px;
   border: 2px solid #94AB6F;
   border-radius: 8px;
 }
 
-/* RESULTADOS DEL BUSCADOR - OCULTOS */
+/* RESULTADOS DEL BUSCADOR - Imágenes más pequeñas y opacas */
 #resultado {
-  display: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+  max-width: 960px;
+  margin: 10px auto 40px auto;
 }
 
-/* MENU LATERAL */
+#resultado a {
+  width: 100px; /* Imágenes más pequeñas */
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease;
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  opacity: 0.7; /* Hacer las imágenes más claras */
+}
+
+#resultado a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  opacity: 1; /* Mostrar al 100% de opacidad al hacer hover */
+}
+
+#resultado img {
+  width: 100%;
+  height: 80px; /* Reducir altura de las imágenes */
+  object-fit: cover;
+  border-bottom: 2px solid #94AB6F;
+}
+
+/* MENU LATERAL - Alinear más hacia la derecha */
 #menu {
   width: 250px;
-  margin: 20px;
+  margin: 20px 0 20px 20px; /* Mover a la derecha */
   background-color: #94AB6F;
   border-radius: 17px;
   padding: 20px;
