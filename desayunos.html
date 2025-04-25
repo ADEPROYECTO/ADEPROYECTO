@@ -1,33 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ADE</title>
- 
+  <link rel="stylesheet" type="text/css" href="estiloMenu.css">
 </head>
 <body>
 
-<div id="barraDiv"></div>
+<!-- BARRA SUPERIOR CON SOLO EL LOGO -->
+<div id="barraDiv">
+  <div id="logo">
+    <img src="logo.png" alt="Logo de ADE">
+  </div>
+</div>
 
-    <div id="contenedorPrincipal">
+<!-- CONTENEDOR GENERAL -->
+<div id="contenedorPrincipal">
 
-        <div id="contenedorIzq">
-            <div id="menu"></div>
-            <div id="anuncio"></div>
-        </div>
-
-        <div id="contenedorDerecho">
-            <div id="catalogo">
-            <div id="carruselInner"></div>
-
-  <div id="botonesControl">
-    <button class="carrusel-control prev">❮</button>
-    <button class="carrusel-control next">❯</button>
+  <div id="contenedorIzq">
+    <div id="menu"></div>
+    <div id="anuncio"></div>
   </div>
 
-  <script src="desayunos.js"></script>
-  <link rel="stylesheet" type="text/css" href="estiloMenu.css">
-           
+  <div id="contenedorDerecho">
+    <div id="catalogo">
+      <div id="carruselInner"></div>
+
+      <div id="botonesControl">
+        <button class="carrusel-control prev">❮</button>
+        <button class="carrusel-control next">❯</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="desayunos.js"></script>
 </body>
 </html>
