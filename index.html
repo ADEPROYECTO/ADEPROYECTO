@@ -1,35 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADE</title>
-    <link rel="stylesheet" href="indexADE.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recetario</title>
+  <link rel="stylesheet" href="indexADE.css">
 </head>
 <body>
-    
-    <!-- BARRA DE BUSQUEDA CON LOGO -->
+  <!-- BARRA CON LOGO Y BUSCADOR -->
+  <div class="header">
     <div id="barraDiv">
-        <div>
-            <img id="logoBusqueda" src="logo.jpg" alt="Logo">
-            <input type="text" id="buscar" placeholder="Buscar...">
-        </div>
+      <div id="logo">
+        <a href="index.html">
+          <img src="logo.jpg" alt="Logo">
+        </a>
+      </div>
     </div>
+  </div>
 
-    <div id="contenedorPrincipal">
+  <!-- SECCIONES DE LA PÁGINA -->
+  <div id="menu"></div>
+  <div id="catalogo"></div>
+  <div id="anuncio"></div>
+  <div id="reloj"></div>
 
-        <div id="contenedorIzq">
-            <div id="menu"></div>
-            <div id="anuncio"></div>
-        </div>
-
-        <div id="contenedorDerecho">
-            <div id="catalogo"></div>
-            <div id="reloj"></div>
-        </div>
-
-    </div>
-
-    <script src="indexADE.js"></script>
+  <!-- JAVASCRIPT -->
+  <script src="indexADE.js"></script>
 </body>
 </html>
+
