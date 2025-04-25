@@ -1,13 +1,21 @@
+/* RESET GENERAL */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
 /* BUSQUEDAAAAAAA */
 #barraDiv {
   max-width: 900px;
-  margin: 0 auto;
+  margin: 20px auto 10px auto;
   padding: 10px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   gap: 15px;
+  background-color: #ffffff;
 }
 
 /* Logo */
@@ -17,7 +25,7 @@
 }
 
 #logo img {
-  height: 60px; /* LOGO un poquito más grande */
+  height: 60px;
   width: auto;
   cursor: pointer;
 }
@@ -26,27 +34,54 @@
 #buscar {
   flex: 1;
   width: calc(100% - 20px);
-  padding: 8px;
+  padding: 10px;
   border: 2px solid #94AB6F;
-  border-radius: 5px;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
 }
 
-/* Resultados */
+/* Resultados - tarjetas organizadas */
 #resultado {
-  list-style-type: none;
-  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-#resultado li {
-  margin-bottom: 10px;
+#resultado a {
+  width: 250px;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+#resultado a:hover {
+  transform: scale(1.03);
 }
 
 #resultado img {
-  max-width: 100px;
-  height: auto;
-  display: block;
-  margin-bottom: 5px;
-  border-radius: 8px;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 3px solid #94AB6F;
+}
+
+#resultado span {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 /* CONTENEDORES PRINCIPALES */
@@ -68,12 +103,6 @@
 }
 
 /* MENU */
-body {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
 #menu {
   width: 250px;
   margin: 20px;
