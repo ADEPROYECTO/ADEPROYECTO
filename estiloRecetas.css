@@ -18,7 +18,7 @@ body, html {
   max-width: 600px;
 }
 #logo img {
-  height: 80px; /* Tamaño aumentado */
+  height: 60px; /* Tamaño aumentado */
   width: auto;
   cursor: pointer;
   margin-right: 15px;
