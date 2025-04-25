@@ -3,15 +3,23 @@ body, html {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background-color: #f9f9f9;
 }
 
-/* BUSQUEDA */
+/* CONTENEDOR GENERAL */
+#contenedorPrincipal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* BARRA DE BUSQUEDA */
 #barraDiv {
   max-width: 900px;
-  margin: 20px auto 10px auto;
+  margin: 20px auto 0 auto;
   padding: 10px;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   gap: 15px;
@@ -24,41 +32,38 @@ body, html {
 }
 
 #logo img {
-  height: 60px;
+  height: 50px;
   width: auto;
   cursor: pointer;
 }
 
 #buscar {
   flex: 1;
-  width: calc(100% - 20px);
-  padding: 10px;
+  padding: 10px 15px;
+  font-size: 16px;
   border: 2px solid #94AB6F;
   border-radius: 8px;
-  font-size: 16px;
-  box-sizing: border-box;
 }
 
-/* RESULTADOS - tarjetas pequeñas y ordenadas */
+/* RESULTADOS DEL BUSCADOR */
 #resultado {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
   padding: 20px;
-  max-width: 1000px;
-  margin: 0 auto;
+  max-width: 960px;
+  margin: 10px auto 40px auto;
 }
 
 #resultado a {
-  width: 160px;
+  width: 140px;
   background-color: #ffffff;
-  border-radius: 12px;
+  border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
-  transition: transform 0.2s ease-in-out;
-  cursor: pointer;
+  transition: transform 0.2s ease;
   text-decoration: none;
   color: #333;
   display: flex;
@@ -72,37 +77,19 @@ body, html {
 
 #resultado img {
   width: 100%;
-  height: 120px;
+  height: 100px;
   object-fit: cover;
   border-bottom: 2px solid #94AB6F;
 }
 
 #resultado span {
-  padding: 10px 8px;
-  font-size: 14px;
-  font-weight: 600;
-  text-align: center;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 10px 6px;
+  line-height: 1.2;
 }
 
-/* CONTENEDORES PRINCIPALES */
-#contenedorPrincipal {
-  display: flex;
-  justify-content: space-between;
-}
-
-#contenedorIzq {
-  display: flex;
-  flex-direction: column;
-}
-
-#contenedorDerecho {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* MENU */
+/* MENU LATERAL */
 #menu {
   width: 250px;
   margin: 20px;
@@ -112,7 +99,6 @@ body, html {
 }
 
 #pTitulo1 {
-  font-family: sans-serif;
   color: white;
   font-weight: bold;
 }
@@ -171,7 +157,6 @@ body, html {
   align-items: center;
 }
 
-/* Carrusel interno */
 #carruselInner {
   display: flex;
   flex-wrap: wrap;
@@ -179,7 +164,6 @@ body, html {
   gap: 20px;
 }
 
-/* Tarjeta de receta */
 .item-receta {
   width: 280px;
   background-color: white;
@@ -209,7 +193,7 @@ body, html {
   font-weight: bold;
 }
 
-/* Botones carrusel */
+/* BOTONES CARRUSEL */
 #botonesControl {
   margin-top: 20px;
 }
@@ -228,3 +212,4 @@ body, html {
 .carrusel-control:hover {
   background-color: #7a9359;
 }
+
