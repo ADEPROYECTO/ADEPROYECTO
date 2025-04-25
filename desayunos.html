@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,43 +8,36 @@
 </head>
 <body>
 
-  <!-- Barra de búsqueda con logo -->
-  <div id="barraDiv">
-    <div id="logo">
-      <img src="logo.jpg" alt="Logo de ADE">
-    </div>
-    <input type="text" id="buscar" placeholder="Buscar...">
+<!-- BARRA DE BUSQUEDA -->
+<div id="barraDiv">
+  <div id="logo">
+    <img src="logo.png" alt="Logo de ADE">
+  </div>
+  <input type="text" id="buscar" placeholder="Buscar...">
+  <ul id="resultado"></ul>
+</div>
+
+<div id="contenedorPrincipal">
+  <div id="contenedorIzq">
+    <div id="menu"></div>
+    <div id="anuncio"></div>
   </div>
 
-  <!-- Contenedor principal -->
-  <div id="contenedorPrincipal">
+  <div id="contenedorDerecho">
+    <div id="catalogo">
+      <div id="carruselInner"></div>
 
-    <!-- Lado izquierdo -->
-    <div id="contenedorIzq">
-      <div id="menu"></div>
-      <div id="anuncio"></div>
-    </div>
-
-    <!-- Lado derecho -->
-    <div id="contenedorDerecho">
-      <div id="catalogo">
-        <div id="carruselInner"></div>
-
-        <div id="botonesControl">
-          <button class="carrusel-control prev">❮</button>
-          <button class="carrusel-control next">❯</button>
-        </div>
+      <div id="botonesControl">
+        <button class="carrusel-control prev">❮</button>
+        <button class="carrusel-control next">❯</button>
       </div>
     </div>
-
   </div>
+</div>
 
-  <!-- Script -->
-  <script src="desayunos.js"></script>
+<div id="reloj" style="text-align:center; margin: 20px; font-weight: bold;"></div>
+
+<script src="desayunos.js"></script>
 
 </body>
 </html>
-
-
-
-
