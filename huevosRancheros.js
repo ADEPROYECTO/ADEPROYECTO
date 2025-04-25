@@ -36,9 +36,15 @@ function buscador() {
     resultado.innerHTML = '';
 
     const recetas = [
-        { title: "Receta 1", image: "receta1.jpg", url: "recipe1.html" },
-        { title: "Receta 2", image: "receta2.jpg", url: "recipe2.html" },
-        { title: "Receta 3", image: "receta3.jpg", url: "recipe3.html" },
+     { image: 'Ensalada de tomate y queso.jpg', title: 'Ensalada de tomate y queso', url: 'Ensalada de tomate y queso.html' },        
+        { image: 'omeletteQueso.jpg', title: 'Omelette de queso', url: 'omeletteQueso.html' },        
+        { image: "manzanasHorno.jpg", title: 'Manzanas al horno' , url: "manzanasHorno.html" },
+        { image: "pastaTomate.jpg", title: 'Pasta de tomate' , url: "pastaTomate.html" },
+        { image: "platanoFrito.jpg", title: 'Platano frito' , url: "platano frito.html" },
+        { image: 'Crema de lentejas.jpg', title: 'Crema de lentejas', url: 'Crema de lentejas.html' },
+        { image: 'Ensalada de pasta fria.jpg', title: 'Ensalada de pasta fria', url: 'Ensalada de pasta fria.html' },
+        { image: 'Ensalada de tomate y queso.jpg', title: 'Ensalada de tomate y queso', url: 'Ensalada de tomate y queso.html' },
+        { image: 'Sandwich de atun.jpg', title: 'Sandwich de atun', url: 'Sandwich de atun.html' },
     ];
     
     recetas.forEach(receta => {
