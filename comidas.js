@@ -21,10 +21,10 @@ function buscador() {
 
     const recetas = [
         { image: 'Ensalada de tomate y queso.jpg', title: 'Ensalada de tomate y queso', url: 'Ensalada de tomate y queso.html' },        
-        { image: 'omeletteQueso.jpg', title: 'Omelette de queso', url: 'omeletteQueso.html' },        
-        { image: "manzanasHorno.jpg", title: 'Manzanas al horno' , url: "manzanasHorno.html" },
+        { image: 'tacosPollo.jpg', title: 'Tacos de Pollo', url: 'tacosPollo.html' },        
+        { image: "caldoVerduras.jpg", title: 'Caldo de verduras' , url: "caldoVerduras.html" },
         { image: "pastaTomate.jpg", title: 'Pasta de tomate' , url: "pastaTomate.html" },
-        { image: "platanoFrito.jpg", title: 'Platano frito' , url: "platano frito.html" },
+        { image: "caldoPollo.jpg", title: 'Caldo de pollo' , url: "caldoPollo.html" },
         { image: 'Crema de lentejas.jpg', title: 'Crema de lentejas', url: 'Crema de lentejas.html' },
         { image: 'Ensalada de pasta fria.jpg', title: 'Ensalada de pasta fria', url: 'Ensalada de pasta fria.html' },
         { image: 'Ensalada de tomate y queso.jpg', title: 'Ensalada de tomate y queso', url: 'Ensalada de tomate y queso.html' },
