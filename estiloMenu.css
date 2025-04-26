@@ -46,44 +46,43 @@ body, html {
   border-radius: 8px;
 }
 
-/* RESULTADOS DEL BUSCADOR - Imágenes más pequeñas y opacas */
+/* RESULTADOS DEL BUSCADOR */
 #resultado {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 15px;
-  padding: 20px;
-  max-width: 960px;
-  margin: 10px auto 40px auto;
+  gap: 20px;
+  margin-top: 20px;
 }
 
 #resultado a {
-  width: 100px; /* Imágenes más pequeñas */
-  background-color: #ffffff;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  transition: transform 0.2s ease;
-  text-decoration: none;
-  color: #333;
   display: flex;
   flex-direction: column;
-  opacity: 0.7; /* Hacer las imágenes más claras */
+  align-items: center;
+  width: 150px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  padding: 8px;
+  font-size: 14px;
+  transition: transform 0.2s ease-in-out;
 }
 
 #resultado a:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  opacity: 1; /* Mostrar al 100% de opacidad al hacer hover */
 }
 
 #resultado img {
   width: 100%;
-  height: 80px; /* Reducir altura de las imágenes */
+  height: 100px;
   object-fit: cover;
-  border-bottom: 2px solid #94AB6F;
+  border-radius: 8px;
+  margin-top: 5px;
 }
+
 
 /* MENU LATERAL - Alinear más hacia la derecha */
 #menu {
