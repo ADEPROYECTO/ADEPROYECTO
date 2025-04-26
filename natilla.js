@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 const logo = document.createElement('img');
 
-logo.src = '/logo.jpg';
+logo.src = 'logo.jpg';
 logo.addEventListener('click', () => {
             window.location.href = 'index.html';
 
