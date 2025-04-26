@@ -21,7 +21,7 @@ function buscador() {
 
     const recetas = [
         { image: 'Ensalada de tomate y queso.jpg', title: 'Ensalada de tomate y queso', url: 'Ensalada de tomate y queso.html' },        
-        { image: 'omeletteQueso.jpg', title: 'Omelette de queso', url: 'omeletteQueso.html' },        
+        { image: 'tacosPollo.jpg', title: 'Tacos de Pollo', url: 'tacosPollo.html' },        
         { image: "manzanasHorno.jpg", title: 'Manzanas al horno' , url: "manzanasHorno.html" },
         { image: "pastaTomate.jpg", title: 'Pasta de tomate' , url: "pastaTomate.html" },
         { image: "platanoFrito.jpg", title: 'Platano frito' , url: "platano frito.html" },
