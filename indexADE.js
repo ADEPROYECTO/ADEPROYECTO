@@ -122,7 +122,7 @@ hPostres.textContent = 'Postres';
 catalogoDiv.appendChild(hPostres);
 
     const postres = [
-      { image: "platanoFrito.jpg", title: 'Platano frito' , url: "platano frito.html" },
+      { image: "platanoFrito.jpg", title: 'Platano frito' , url: "platanoFrito.html" },
       { image: "arrozLeche.jpg", title: 'Arroz con leche' , url: "arrozLeche.html" },      
       { image: "galletasAvena.jpg", title: 'Galletas de Avena' , url: "galletasAvena.html" },
 
