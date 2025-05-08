@@ -92,15 +92,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
   const recetas = [
     { src: 'arroz con pollo.jpg', alt: 'arroz con pollo', link: 'ArrozConPollo.html' },
-    { src: 'omeletteChamp.jpg', alt: 'Omelette de champiñon', link: 'omeletteChamp.html' },
+    { src: 'galletasAvena.jpg', alt: 'Galletas de Avena', link: 'galletasAvena.html' },
     { src: 'quesadillasEsp.jpg', alt: 'Quesadillas con espinaca', link: 'quesadillaEsp.html' },
-    { src: 'sandwichHuevo.jpg', alt: 'Sandwich de huevo', link: 'sandwichHuevo.html' },
-    { src: 'sandwichPollo.jpg', alt: 'sandwich de pollo', link: 'sandwichPollo.html' },
+    { src: 'arrozLeche.jpg', alt: 'Arroz con leche', link: 'arrozLeche.html' },
+    { src: 'papasQueso.jpg', alt: 'Papas con queso', link: 'papasQueso.html' },
     { src: 'omeletteQueso.jpg', alt: 'omelette de queso', link: 'omeletteQueso.html' },
-    { src: 'Sandwich de atun.jpg', alt: 'Sandwich de atun', link: 'Sandwich de atun.html' },
-    { src: 'Ensalada de tomate y queso.jpg', alt: 'Ensalada', link: 'Ensalada de tomate y queso.html' },
+    { src: 'platanoFrito.jpg', alt: 'Platano frito', link: 'platanoFrito.html' },
+    { src: 'ensaladaGarbanzo.jpg', alt: 'Ensalada de Garbanzo', link: 'ensaladaGarbanzo.html' },
     { src: 'Sopa de fideos con pollo.jpg', alt: 'sopa', link: 'Sopa de fideos con pollo.html' },
-    { src: 'natilla.jpg', alt: 'natilla', link: 'natilla.html' },
+    { src: 'gelatinaFrutas.jpg', alt: 'Gelatinaa de frutas', link: 'gelarinaFruta.html' },
   ];
 
   // Función para crear las imágenes y añadirlas al carruselInner
