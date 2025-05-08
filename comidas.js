@@ -97,10 +97,10 @@ document.addEventListener('DOMContentLoaded', function() {
     { src: 'Crema de lentejas.jpg', alt: 'Crema de lentejas', link: 'Crema de lentejas.html' },
     { src: 'Ensalada de pasta fria.jpg', alt: 'Ensalada de pasta fria', link: 'Ensalada de pasta fria.html' },
     { src: 'Sandwich de atun.jpg', alt: 'Sandwich de atun', link: 'Sandwich de atun.html' },
-    { src: 'arroz con pollo.jpg', alt: 'arroz con pollo', link: 'ArrozConPollo.html' },
+    { src: 'pastaTomate.jpg', alt: 'Pasta de Tomate', link: 'pastaTomate.html' },
     { src: 'Sopa de fideos con pollo.jpg', alt: 'Sopa de fideos con pollo', link: 'Sopa de fideos con pollo.html' },
-    { src: 'Tortilla de verdura.jpg', alt: 'Tortilla de verdura.', link: 'Tortilla de verdura.html' },
-    { src: 'arroz con pollo.jpg', alt: 'arroz con pollo', link: 'ArrozConPollo.html' },
+    { src: 'papasQueso.jpg', alt: 'Papas con queso.', link: 'papasQueso.html' },
+    { src: 'polloLimon.jpg', alt: 'Pollo con limon', link: 'polloLimon.html' },
     { src: 'Crema de Verduras.jpg', alt: 'Crema de Verduras', link: 'CremaconVerduras.html'},
   ];
 
