@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function() {
     { src: 'sandwichPollo.jpg', alt: 'Sandwich de Pollo', link: 'sandwichPollo.html' },
     { src: 'Sandwich de atun.jpg', alt: 'Sandwich de Atún', link: 'Sandwich de atun.html' },
     { src: 'tostadaHuevo.jpg', alt: 'Tostadas con Huevo', link: 'tostadaHuevo.html' },
-    { src: 'Tortilla de verdura.jpg', alt: 'Tortilla de Verdura', link: 'Tortilla de verdura.html' },
+    { src: 'Tortilla de verdura.jpg', alt: 'Tortilla de Verdura', link: 'TortillasdeVerdura.html' },
     { src: 'natilla.jpg', alt: 'Natilla', link: 'natilla.html' },
   ];
 
